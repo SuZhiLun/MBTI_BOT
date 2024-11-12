@@ -6,7 +6,7 @@ from json_loader import load_json
 
 def main():
     load_dotenv()
-    gen_key = os.getenv("GEMINI_API_KEY")
+    gen_key = os.getenv("GOOGLE_API_KEY")
 
     if not gen_key:
         st.error("API key not found. Please set the GEMINI_API in the environment.")
